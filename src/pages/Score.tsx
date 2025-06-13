@@ -103,7 +103,7 @@ export default function Score() {
                         : key === "gdcd"
                         ? "Civic education"
                         : key === "ma_ngoai_ngu"
-                        ? "Language Id"
+                        ? "Language ID"
                         : key}
                     </td>
 
