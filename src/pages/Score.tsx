@@ -6,7 +6,7 @@ interface SearchResult {
   toan: number;
   ngu_van: number;
   ngoai_ngu: number;
-  vat_ly: number;
+  vat_li: number;
   hoa_hoc: number;
   sinh_hoc: number;
   lich_su: number;
@@ -83,9 +83,30 @@ export default function Score() {
               {Object.entries(result).map(([key, value]) =>
                 key !== "sbd" ? (
                   <tr key={key}>
-                    <td className="border px-4 py-2 capitalize">
-                      {key.replace(/_/g, " ")}
+                    <td className="border px-4 py-2">
+                      {key === "toan"
+                        ? "Math"
+                        : key === "ngu_van"
+                        ? "Literature"
+                        : key === "ngoai_ngu"
+                        ? "Foreign language"
+                        : key === "vat_li"
+                        ? "Physics"
+                        : key === "hoa_hoc"
+                        ? "Chemistry"
+                        : key === "sinh_hoc"
+                        ? "Biology"
+                        : key === "lich_su"
+                        ? "History"
+                        : key === "dia_li"
+                        ? "Geography"
+                        : key === "gdcd"
+                        ? "Civic education"
+                        : key === "ma_ngoai_ngu"
+                        ? "Language Id"
+                        : key}
                     </td>
+
                     <td className="border px-4 py-2">{value}</td>
                   </tr>
                 ) : null
