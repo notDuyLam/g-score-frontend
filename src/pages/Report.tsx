@@ -254,7 +254,7 @@ export default function Report() {
         <div className="space-y-6">
           {/* Statistics Cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {processedData.map((data, index) => {
+            {processedData.map((data, _index) => {
               const percentage =
                 totalStudents > 0
                   ? ((data.count / totalStudents) * 100).toFixed(1)

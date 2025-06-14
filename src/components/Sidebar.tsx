@@ -8,7 +8,6 @@ import {
   BarChart3,
   Settings,
   Trophy,
-  TrendingUp,
 } from "lucide-react";
 
 const navItems = [
