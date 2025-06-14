@@ -6,6 +6,11 @@ A modern React-based student management system for viewing and analyzing student
 
 Check out the live application here: [https://g-score-frontend-ten.vercel.app/](https://g-score-frontend-ten.vercel.app/)
 
+## 🖇️ Backend API
+
+The frontend connects to the backend API, which is available at:  
+[https://g-score-backend-ut59.onrender.com](https://g-score-backend-ut59.onrender.com)
+
 > **Note:**  
 > Make sure the backend API server is running before starting the frontend application. The frontend relies on the backend for all data fetching and analytics features.
 
