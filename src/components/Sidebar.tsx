@@ -123,25 +123,6 @@ export default function Sidebar() {
 
       {/* Footer */}
       <div className="p-3 lg:p-4 border-t border-slate-700">
-        <div className="bg-slate-800/50 rounded-lg p-3 mb-3 border border-yellow-500/20 hidden lg:block">
-          <div className="flex items-center gap-2 mb-2">
-            <TrendingUp className="h-4 w-4 text-yellow-400" />
-            <span className="text-sm font-medium text-yellow-300">
-              Quick Stats
-            </span>
-          </div>
-          <div className="grid grid-cols-2 gap-2 text-xs text-slate-400">
-            <div>
-              <div className="text-yellow-300 font-semibold">1,234</div>
-              <div>Total Students</div>
-            </div>
-            <div>
-              <div className="text-yellow-300 font-semibold">98.5%</div>
-              <div>Pass Rate</div>
-            </div>
-          </div>
-        </div>
-
         <div className="text-xs text-slate-500 text-center">
           © 2025 G-Score System
         </div>
