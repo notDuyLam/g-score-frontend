@@ -28,6 +28,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, TrendingUp, Users, BookOpen } from "lucide-react";
+import { API_BASE_URL } from "@/config/api";
 
 ChartJS.register(
   CategoryScale,
@@ -66,7 +67,7 @@ export default function Report() {
     setError("");
     try {
       const res = await axios.get<{ counts: CountData[] }>(
-        `http://localhost:3000/api/counts/${subject}`
+        `${API_BASE_URL}/api/counts/${subject}`
       );
       setCounts(res.data.counts);
     } catch (err) {

@@ -22,6 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Search, GraduationCap, Calculator } from "lucide-react";
+import { API_BASE_URL } from "@/config/api";
 
 interface SearchResult {
   sbd: string;
@@ -52,7 +53,7 @@ export default function Score() {
 
     try {
       const res = await axios.get<SearchResult>(
-        `http://localhost:3000/api/${regNumber}`
+        `${API_BASE_URL}/api/${regNumber}`
       );
       setResult(res.data);
     } catch (err) {

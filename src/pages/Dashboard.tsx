@@ -20,6 +20,7 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Trophy, Calculator, Users, GraduationCap } from "lucide-react";
+import { API_BASE_URL } from "@/config/api";
 
 interface SearchResult {
   sbd: string;
@@ -48,7 +49,7 @@ export default function Dashboard() {
 
     try {
       const res = await axios.get<SearchResult[]>(
-        `http://localhost:3000/api/group/${group}`
+        `${API_BASE_URL}/api/group/${group}`
       );
       setResult(res.data);
     } catch (err) {
